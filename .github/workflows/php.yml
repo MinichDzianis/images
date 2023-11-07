@@ -11,11 +11,10 @@ on:
       - php-fpm/**
       - scripts/build.sh
 jobs:
-
   bitrix:
     name: Build Warden PHP-FPM Images ${{ matrix.php_version }} (bitrix)
     runs-on: ubuntu-latest
-    needs: php-fpm
+    #needs: php-fpm
     strategy:
       matrix:
         php_version: ["7.4", "8.0", "8.1", "8.2"]
