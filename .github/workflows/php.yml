@@ -79,7 +79,7 @@ jobs:
           password: ${{ secrets.GITHUB_TOKEN }}
       - name: Build & Push Images
         env:
-          BUILD_GROUP: centos-php/bitrix
+          BUILD_GROUP: php-fpm/bitrix
           PRE_AUTH: 1
           WARDEN_IMAGE_REPOSITORY: ghcr.io/minichdzianis
           PHP_SOURCE_IMAGE: ghcr.io/minichdzianis/centos-php
